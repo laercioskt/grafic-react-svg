@@ -1,7 +1,7 @@
 const appReducer = (state = {functionToRender: "x*(x/50)"}, action) => {
   switch (action.type) {
     case "CHANGE_FUNCTION":
-        return action.data;
+      return {functionToRender: action.data};
     default:
       return state;
   }
