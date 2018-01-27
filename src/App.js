@@ -27,6 +27,8 @@ class App extends Component {
             <polyline points={valuePoints} fill="transparent" stroke="black" strokeWidth="0.1"></polyline>
           </g>
         </svg>
+
+        <p>{'<polyline points=' + JSON.stringify(valuePoints) + ' fill="transparent"></polyline>'}</p>
       </div>
     );
   }
